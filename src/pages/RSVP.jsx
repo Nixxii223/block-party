@@ -13,7 +13,8 @@ const RSVPForm = () => {
   const [contributions, setContributions] = useState({
     donateMoney: false,
     bringFood: false,
-    bringItems: false
+    bringItems: false,
+    contributeActivities: false
   });
   const [alertMessage, setAlertMessage] = useState('');
   const [alertSeverity, setAlertSeverity] = useState('success');
@@ -28,8 +29,8 @@ const RSVPForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { donateMoney, bringFood, bringItems } = contributions;
-    if (!name || !email || !street || (coming && !numberOfPeople) || (allergies && !allergyDetails) || (!donateMoney && !bringFood && !bringItems)) {
+    const { donateMoney, bringFood, bringItems, contributeActivities } = contributions;
+    if (!name || !email || !street || (coming && !numberOfPeople) || (allergies && !allergyDetails) || (!donateMoney && !bringFood && !bringItems && !contributeActivities)) {
       setAlertMessage('Please fill in all required fields.');
       setAlertSeverity('error');
       return;
@@ -45,7 +46,8 @@ const RSVPForm = () => {
     const contributionList = [
       donateMoney ? 'Donate money ($5 per person)' : '',
       bringFood ? 'Bring food' : '',
-      bringItems ? 'Bring items needed for the party' : ''
+      bringItems ? 'Bring items needed for the party' : '',
+      contributeActivities ? 'Contribute to activities' : ''
     ].filter(Boolean).join(', ');
 
     emailjs.send('service_e549eua', 'template_wywzmue', {
@@ -72,7 +74,8 @@ const RSVPForm = () => {
        setContributions({
          donateMoney: false,
          bringFood: false,
-         bringItems: false
+         bringItems: false,
+         contributeActivities: false
        });
     }, (err) => {
        console.log('FAILED...', err);
@@ -161,7 +164,7 @@ const RSVPForm = () => {
         )}
         <FormControl required component="fieldset" sx={{ m: 1.5 }}>
           <FormLabel component="legend">
-            We ask that every family contribute in some way if they plan to attend. How would you like to contribute?
+            We kindly ask that every family contribute in some way if they plan to attend. How would you like to contribute?
           </FormLabel>
           <FormGroup>
             <FormControlLabel
@@ -174,13 +177,20 @@ const RSVPForm = () => {
             />
             <FormControlLabel
               control={<Checkbox checked={contributions.bringItems} onChange={handleCheckboxChange} name="bringItems" />}
-              label="Bring items needed for the party"
+              label="Bring items needed for the party (e.g. tables, pop-up tents, etc)"
+            />
+            <FormControlLabel
+              control={<Checkbox checked={contributions.contributeActivities} onChange={handleCheckboxChange} name="contributeActivities" />}
+              label="Contribute to activities (e.g. face painting supplies, yard games, maybe you have a super cool garage band, etc)"
             />
           </FormGroup>
         </FormControl>
-        <Button type="submit" variant="contained" sx={{ mt: 2 }}>
+        <Button type="submit" variant="contained" sx={{ mt: 2, mb: 4 }}>
           Submit RSVP
         </Button>
+        <h3 className="poppins-regular">
+          ***Note: for those who signed up to bring items (things like tables, pop-up tents, etc and/or food, please be on the lookout for an email in the next couple weeks to identify what you will be bringing***
+        </h3>
       </Stack>
     </Box>
   );
