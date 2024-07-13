@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header>
             <div>
-                <h1 className="life-savers-bold">Vincent-Southgate-East Block Party!</h1>
+                <h1 className="life-savers-bold">Chester Block Party!</h1>
             </div>
 
             <nav className="poppins-regular">
@@ -36,7 +36,7 @@ const Header = () => {
                         Pictures
                     </NavLink>
                     <NavLink
-                        to="/contact"
+                        to="/RSVP"
                         style={({ isActive }) => {
                             return {
                                 fontWeight: isActive ? "bold" : "",
@@ -45,7 +45,7 @@ const Header = () => {
                             };
                         }}
                     >
-                        Contact Form
+                        RSVP Form
                     </NavLink>
                 </ul>
             </nav>

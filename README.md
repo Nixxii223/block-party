@@ -1,13 +1,13 @@
 # 20-React-Portfolio
   
   ## Description
-  I created this application as a means of demonstrating my web development skills and providing a platform for potential employers to see my resume and contact me.
+  I created this application as a means of demonstrating my web development skills and providing a platform for potential employers to see my resume and RSVP me.
   
   ## Installation
   N/A
 
   ## Usage
-  Use the navigation bar to toggle between the About Me, Portfolio, Resume and Contact pages.
+  Use the navigation bar to toggle between the About Me, Portfolio, Resume and RSVP pages.
 
   
   ## License

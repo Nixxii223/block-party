@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx'
-import Contact from './pages/contact.jsx';
+import RSVP from './pages/RSVP.jsx';
 import Error from './pages/error.jsx';
 import Homepage from './pages/homepage.jsx';
 import Pictures from './pages/pictures.jsx';
@@ -33,8 +33,8 @@ const router = createBrowserRouter([
         element: <Pictures />,
       },
       {
-        path: '/Contact',
-        element: <Contact />,
+        path: '/RSVP',
+        element: <RSVP />,
       },
     ],
   },
