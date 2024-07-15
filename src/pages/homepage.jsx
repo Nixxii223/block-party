@@ -28,7 +28,7 @@ export default function Homepage() {
             <h3 className="poppins-regular">Date: September 7, 2024</h3>
             <h3 className="poppins-regular">Time: 3:00 PM to 8:00 PM</h3>
             <h3 className="poppins-regular">Activities: This information coming soon!</h3>
-            <h3 className="poppins-regular">Location: Chester Avenue will be blocked off from Vincent down to Ridgeway so the whole street will be available for the fun!</h3>
+            <h3 className="poppins-regular">Location: Chester Avenue will be blocked off from Vincent down to Winfield and Winfield will be blocked off from Alpena to Overlook so that whole area will be available for the fun!</h3>
             <h3 className="poppins-regular">Food: No formal meal is planned but we are asking for families to help contribute in some way and there is an option on the RSVP form to bring food to share!</h3>
             <h3 className="poppins-regular">***Please RSVP using the link below by August 2nd!***</h3>
             <Button
