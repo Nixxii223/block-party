@@ -38,21 +38,19 @@ export default function Homepage() {
                 <ListGroup>
                     <ListGroup.Item>Shannon Averill</ListGroup.Item>
                     <ListGroup.Item>Nicki Barrett</ListGroup.Item>
-                    <ListGroup.Item>Jacqui Gover</ListGroup.Item>
-                    <ListGroup.Item>Elizabeth Kayajian</ListGroup.Item>
                     <ListGroup.Item>Laura Frawley</ListGroup.Item>
+                    <ListGroup.Item>Elizabeth Kayajian</ListGroup.Item>
+                    <ListGroup.Item>Mathilde Lavigne</ListGroup.Item>
                     <ListGroup.Item>Anthony Rodriguez</ListGroup.Item>
-                    <ListGroup.Item>Stepheny Roman</ListGroup.Item>
                     <ListGroup.Item>Ryan Ross</ListGroup.Item>
-                    <ListGroup.Item>Kelly Scanlon</ListGroup.Item>
                 </ListGroup>
             </div>
-            <h3 className="poppins-regular">Date: September 7, 2024</h3>
-            <h3 className="poppins-regular">Time: 3:00 PM to 8:00 PM</h3>
-            <h3 className="poppins-regular">Activities: This information coming soon!</h3>
+            <h3 className="poppins-regular">Date: September 12, 2026</h3>
+            <h3 className="poppins-regular">Time: 12:00 PM to 5:00 PM</h3>
+            <h3 className="poppins-regular">Activities: Eating, Drinking, Games, and having fun!</h3>
             <h3 className="poppins-regular">Location: Chester Avenue will be blocked off from Vincent down to Winfield and Winfield will be blocked off from Alpena to Overlook so that whole area will be available for the fun!</h3>
-            <h3 className="poppins-regular">Food: No formal meal is planned but we are asking for families to help contribute in some way and there is an option on the RSVP form to bring food to share!</h3>
-            <h3 className="poppins-regular">***Please RSVP using the link below by August 2nd!***</h3>
+            <h3 className="poppins-regular">Food: No formal meal is planned but we are asking for families to help contribute in some way and there is an option on the signup genius form to bring food to share!</h3>
+            <h3 className="poppins-regular">***Please RSVP using the link below by August 31st!***</h3>
             <Button
                 component={Link}
                 to="/rsvp"
