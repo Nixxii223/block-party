@@ -7,6 +7,7 @@ import RSVP from './pages/RSVP.jsx';
 import Error from './pages/error.jsx';
 import Homepage from './pages/homepage.jsx';
 import Pictures from './pages/pictures.jsx';
+import SignUp from 'https://www.signupgenius.com/go/10C054CAEA62AA6FBC61-64900667-chester#/';
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
