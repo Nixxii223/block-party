@@ -2,7 +2,7 @@ import * as React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Box, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
-import VenmoCode from '../images/venmo-code.png';
+import VenmoCode from '../images/venmo QR.png';
 
 export default function Homepage() {
     return (
