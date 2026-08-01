@@ -11,7 +11,7 @@ export default function Homepage() {
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 2 }}>
                 <img src={VenmoCode} alt="Venmo QR Code" style={{ maxWidth: '200px', width: '100%' }} />
                 <Button
-                    href="https://account.venmo.com/pay?recipients=Chester-Winfield24"
+                    href="https://account.venmo.com/pay?recipients=Nicki-Barrett-1"
                     target="_blank"
                     variant="contained"
                     size="large"
