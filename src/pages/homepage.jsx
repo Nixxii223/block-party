@@ -36,7 +36,6 @@ export default function Homepage() {
                     The Block Party Committee consists of:
                 </h3>
                 <ListGroup>
-                    <ListGroup.Item>Shannon Averill</ListGroup.Item>
                     <ListGroup.Item>Nicki Barrett</ListGroup.Item>
                     <ListGroup.Item>Laura Frawley</ListGroup.Item>
                     <ListGroup.Item>Elizabeth Kayajian</ListGroup.Item>
