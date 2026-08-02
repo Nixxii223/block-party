@@ -2,14 +2,14 @@ import * as React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Box, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
-import VenmoCode from '../src/images/Venmo QR.png';
+import VenmoCode from '../src/images/VenmoQR.png';
 
 export default function Homepage() {
     return (
         <div>
             <h3 className="poppins-regular">Want to contribute? You can donate via Venmo using the QR code below or by clicking the link!</h3>
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 2 }}>
-                <img src={VenmoCode} alt="Venmo QR Code" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={VenmoCode} alt="VenmoQR Code" style={{ maxWidth: '200px', width: '100%' }} />
                 <Button
                     href="https://account.venmo.com/pay?recipients=Nicki-Barrett-1"
                     target="_blank"
