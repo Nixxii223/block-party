@@ -164,26 +164,8 @@ const RSVPForm = () => {
         )}
         <FormControl required component="fieldset" sx={{ m: 1.5 }}>
           <FormLabel component="legend">
-            We kindly ask that every family contribute in some way if they plan to attend. How would you like to contribute?
+            We kindly ask that every family contribute in some way if they plan to attend. How would you like to contribute?  Please click on the signup link below on what you are able to helpout with.
           </FormLabel>
-          <FormGroup>
-            <FormControlLabel
-              control={<Checkbox checked={contributions.donateMoney} onChange={handleCheckboxChange} name="donateMoney" />}
-              label="Donate money (suggested contribution is $5 per person)"
-            />
-            <FormControlLabel
-              control={<Checkbox checked={contributions.bringFood} onChange={handleCheckboxChange} name="bringFood" />}
-              label="Bring food"
-            />
-            <FormControlLabel
-              control={<Checkbox checked={contributions.bringItems} onChange={handleCheckboxChange} name="bringItems" />}
-              label="Bring items needed for the party (e.g. tables, pop-up tents, etc)"
-            />
-            <FormControlLabel
-              control={<Checkbox checked={contributions.contributeActivities} onChange={handleCheckboxChange} name="contributeActivities" />}
-              label="Contribute to activities (e.g. face painting supplies, yard games, maybe you have a super cool garage band, etc)"
-            />
-          </FormGroup>
         </FormControl>
         
                 <Button
