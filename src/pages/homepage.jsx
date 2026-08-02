@@ -2,6 +2,12 @@ import * as React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Box, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import Anthony from '../images/Anthonypng.png';
+import Elizabeth from '../images/Elziabethpng.png';
+import Laura from '../images/Laurapng.png';
+import Mathilde from '../images/Mathildepng.png';
+import Nicki from '../images/Nickipng.png';
+import Ryan from '../images/Ryanpng.png';
 import VenmoCode from '../images/VenmoQR.png';
 
 export default function Homepage() {
@@ -37,11 +43,17 @@ export default function Homepage() {
                 </h3>
                 <ListGroup>
                     <ListGroup.Item>Nicki Barrett</ListGroup.Item>
+                    <img src={Nicki} alt="Nickipng" style={{ maxWidth: '200px', width: '25%' }} />
                     <ListGroup.Item>Laura Frawley</ListGroup.Item>
+                    <img src={Laura} alt="Laurapng" style={{ maxWidth: '200px', width: '25%' }} />
                     <ListGroup.Item>Elizabeth Kayajian</ListGroup.Item>
+                    <img src={Elizabeth} alt="Elizabethpng" style={{ maxWidth: '200px', width: '25%' }} />
                     <ListGroup.Item>Mathilde Lavigne</ListGroup.Item>
+                    <img src={Mathilde} alt="Mathildepng" style={{ maxWidth: '200px', width: '25%' }} />
                     <ListGroup.Item>Anthony Rodriguez</ListGroup.Item>
+                    <img src={Anthony} alt="Anthonypng" style={{ maxWidth: '200px', width: '25%' }} />
                     <ListGroup.Item>Ryan Ross</ListGroup.Item>
+                    <img src={Ryan} alt="Ryanpng" style={{ maxWidth: '200px', width: '25%' }} />
                 </ListGroup>
             </div>
             <h3 className="poppins-regular">Date: September 12, 2026</h3>
