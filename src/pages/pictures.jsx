@@ -5,19 +5,19 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import { Box, Button } from '@mui/material';
 import './styles.css';
 import { Container } from '@mui/material';
-import Bike from '..Bike.jpeg';
-import CanJam from '..CanJam.JPEG';
-import Canopy from '..Canopy.JPEG';
-import Chalk from '..Chalk.JPEG';
-import Chat from '..Chat.JPEG';
-import Cooper from '..Canopy.jpeg';
-import Food from '..Food.JPEG';
-import Friends from '..Friends.JPEG';
-import Frisbee from '..Frisbee.JPEG';
-import Girls from '..Girls.JPEG';
-import Party from '..Group.JPEG';
-import JumpRope from '..JumpRope.JPEG';
-import Wagon from '..Wagon.jpeg';
+import Bike from '../Bike.jpeg';
+import CanJam from '../CanJam.JPEG';
+import Canopy from '../Canopy.JPEG';
+import Chalk from '../Chalk.JPEG';
+import Chat from '../Chat.JPEG';
+import Cooper from '../Canopy.jpeg';
+import Food from '../Food.JPEG';
+import Friends from '../Friends.JPEG';
+import Frisbee from '../Frisbee.JPEG';
+import Girls from '../Girls.JPEG';
+import Party from '../Group.JPEG';
+import JumpRope from '../JumpRope.JPEG';
+import Wagon from '../Wagon.jpeg';
 
 
 export default function TitlebarImageList() {
