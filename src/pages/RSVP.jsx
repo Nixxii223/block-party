@@ -185,6 +185,25 @@ const RSVPForm = () => {
             />
           </FormGroup>
         </FormControl>
+        
+                <Button
+                    href="https://www.signupgenius.com/go/10C054CAEA62AA6FBC61-64900667-chester#/"
+                    target="_blank"
+                    variant="contained"
+                    size="large"
+                    sx={{
+                        backgroundColor: '#3d95ce',
+                        color: '#fff',
+                        '&:hover': {
+                            backgroundColor: '#357ebd',
+                        },
+                        mt: 2,
+                    }}
+                    className="poppins-regular"
+                >
+                    SignUp Here!
+                </Button>
+
         <Button type="submit" variant="contained" sx={{ mt: 2, mb: 4 }}>
           Submit RSVP
         </Button>
