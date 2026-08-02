@@ -13,8 +13,6 @@ export default function TitlebarImageList() {
                 <h2 className="life-savers-regular">Pictures</h2>
             
                 <h2 className="life-savers-regular">Block Party 2025!</h2>
-              
-   <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 2 }}>
                 <img src={Group} alt="Group" style={{ maxWidth: '200px', width: '100%' }} />
                 
                 <p className="poppins-regular">Food!.</p>
@@ -36,7 +34,6 @@ export default function TitlebarImageList() {
                 <img src={Bike} alt="Bike" style={{ maxWidth: '200px', width: '100%' }} />
                 <img src={Video} alt="Video" style={{ maxWidth: '200px', width: '100%' }} />
 
-       </Box>
         </Container>
     );
 }
