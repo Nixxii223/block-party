@@ -3,7 +3,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import { Box, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Anthony from '../images/Anthonypng.png';
-import Elizabeth from '../images/Elziabethpng.png';
+import Elizabeth from '../images/Elizabethpng.png';
 import Laura from '../images/Laurapng.png';
 import Mathilde from '../images/Mathildepng.png';
 import Nicki from '../images/Nickipng.png';
