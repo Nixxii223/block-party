@@ -17,22 +17,22 @@ export default function TitlebarImageList() {
                 <img src={Group} alt="Group" style={{ maxWidth: '200px', width: '100%' }} />
                 
                 <p className="poppins-regular">Food!.</p>
-                <img src={Canopy} alt="Canopy" style={{ maxWidth: '200px', width: '100%' }} />
-                <img src={Food} alt="Food" style={{ maxWidth: '200px', width: '100%' }} />
+                <img master={Canopy} alt="Canopy" style={{ maxWidth: '200px', width: '100%' }} />
+                <img master={Food} alt="Food" style={{ maxWidth: '200px', width: '100%' }} />
                 
                 <p className="poppins-regular">Adult Fun!.</p>
-                <img src={Chat} alt="Chat" style={{ maxWidth: '200px', width: '100%' }} />
-                <img src={Girls} alt="Girls" style={{ maxWidth: '200px', width: '100%' }} />
-                <img src={Friends} alt="Friends" style={{ maxWidth: '200px', width: '100%' }} />
-                <img src={CanJam} alt="CanJam" style={{ maxWidth: '200px', width: '100%' }} />
-                <img src={Frisbee} alt="Frisbee" style={{ maxWidth: '200px', width: '100%' }} />
+                <img master={Chat} alt="Chat" style={{ maxWidth: '200px', width: '100%' }} />
+                <img master={Girls} alt="Girls" style={{ maxWidth: '200px', width: '100%' }} />
+                <img master={Friends} alt="Friends" style={{ maxWidth: '200px', width: '100%' }} />
+                <img master={CanJam} alt="CanJam" style={{ maxWidth: '200px', width: '100%' }} />
+                <img master={Frisbee} alt="Frisbee" style={{ maxWidth: '200px', width: '100%' }} />
 
                 <p className="poppins-regular">Kid Fun!.</p>
-                <img src={Cooper} alt="Cooper" style={{ maxWidth: '200px', width: '100%' }} />
-                <img src={JumpRope} alt="JumpRope" style={{ maxWidth: '200px', width: '100%' }} />
-                <img src={Wagon} alt="Wagon" style={{ maxWidth: '200px', width: '100%' }} />
-                <img src={Chalk} alt="Chalk" style={{ maxWidth: '200px', width: '100%' }} />
-                <img src={Bike} alt="Bike" style={{ maxWidth: '200px', width: '100%' }} />
+                <img master={Cooper} alt="Cooper" style={{ maxWidth: '200px', width: '100%' }} />
+                <img master={JumpRope} alt="JumpRope" style={{ maxWidth: '200px', width: '100%' }} />
+                <img master={Wagon} alt="Wagon" style={{ maxWidth: '200px', width: '100%' }} />
+                <img master={Chalk} alt="Chalk" style={{ maxWidth: '200px', width: '100%' }} />
+                <img master={Bike} alt="Bike" style={{ maxWidth: '200px', width: '100%' }} />
                 </Box>
         </Container>
     );
