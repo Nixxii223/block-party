@@ -14,7 +14,7 @@ export default function TitlebarImageList() {
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 2 }}>
            
                 <h2 className="life-savers-regular">Block Party 2025!</h2>
-                <img src={Group} alt="Group" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={Party} alt="Party" style={{ maxWidth: '200px', width: '100%' }} />
                 
                 <p className="poppins-regular">Food!.</p>
                 <img master={Canopy} alt="Canopy" style={{ maxWidth: '200px', width: '100%' }} />
