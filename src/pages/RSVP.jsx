@@ -201,7 +201,7 @@ const RSVPForm = () => {
                     }}
                     className="poppins-regular"
                 >
-                    SignUp Here!
+                    SignUp for what you can bring Here!
                 </Button>
 
         <Button type="submit" variant="contained" sx={{ mt: 2, mb: 4 }}>
