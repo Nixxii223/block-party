@@ -190,7 +190,7 @@ const RSVPForm = () => {
           Submit RSVP
         </Button>
         <h3 className="poppins-regular">
-          ***Note: for those who signed up to bring items (things like tables, pop-up tents, etc and/or food, please be on the lookout for an email in the next couple weeks to identify what you will be bringing***
+          Thanks again!  Looking forward to seeing everyone!
         </h3>
       </Stack>
     </Box>
