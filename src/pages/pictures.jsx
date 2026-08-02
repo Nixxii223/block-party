@@ -5,19 +5,19 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import { Box, Button } from '@mui/material';
 import './styles.css';
 import { Container } from '@mui/material';
-import Bike from '../images/Bike.jpeg';
-import CanJam from '../images/CanJam.JPEG';
-import Canopy from '../images/Canopy.JPEG';
-import Chalk from '../images/Chalk.JPEG';
-import Chat from '../images/Chat.JPEG';
-import Cooper from '../images/Canopy.jpeg';
-import Food from '../images/Food.JPEG';
-import Friends from '../images/Friends.JPEG';
-import Frisbee from '../images/Frisbee.JPEG';
-import Girls from '../images/Girls.JPEG';
-import Party from '../images/Party.JPEG';
-import JumpRope from '../images/JumpRope.JPEG';
-import Wagon from '../images/Wagon.jpeg';
+import Bike from '../src/images/Bike.jpeg';
+import CanJam from '../src/images/CanJam.JPEG';
+import Canopy from '../src/images/Canopy.JPEG';
+import Chalk from '../src/images/Chalk.JPEG';
+import Chat from '../src/images/Chat.JPEG';
+import Cooper from '../src/images/Canopy.jpeg';
+import Food from '../src/images/Food.JPEG';
+import Friends from '../src/images/Friends.JPEG';
+import Frisbee from '../src/images/Frisbee.JPEG';
+import Girls from '../src/images/Girls.JPEG';
+import Party from '../src/images/Party.JPEG';
+import JumpRope from '../src/images/JumpRope.JPEG';
+import Wagon from '../src/images/Wagon.jpeg';
 
 
 export default function TitlebarImageList() {
