@@ -32,7 +32,6 @@ export default function TitlebarImageList() {
                 <img src={Wagon} alt="Wagon" style={{ maxWidth: '200px', width: '100%' }} />
                 <img src={Chalk} alt="Chalk" style={{ maxWidth: '200px', width: '100%' }} />
                 <img src={Bike} alt="Bike" style={{ maxWidth: '200px', width: '100%' }} />
-                <img src={Video} alt="Video" style={{ maxWidth: '200px', width: '100%' }} />
 
         </Container>
     );
