@@ -9,7 +9,7 @@ export default function Homepage() {
         <div>
             <h3 className="poppins-regular">Want to contribute? You can donate via Venmo using the QR code below or by clicking the link!</h3>
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 2 }}>
-                <img src={VenmoCode} alt="Venmo QR" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={VenmoCode} alt="Venmo QR Code" style={{ maxWidth: '200px', width: '100%' }} />
                 <Button
                     href="https://account.venmo.com/pay?recipients=Nicki-Barrett-1"
                     target="_blank"
