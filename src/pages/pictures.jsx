@@ -11,7 +11,8 @@ export default function TitlebarImageList() {
     return (
         <Container className="portfolio-container">
                 <h2 className="life-savers-regular">Pictures</h2>
-            
+                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 2 }}>
+           
                 <h2 className="life-savers-regular">Block Party 2025!</h2>
                 <img src={Group} alt="Group" style={{ maxWidth: '200px', width: '100%' }} />
                 
@@ -32,7 +33,7 @@ export default function TitlebarImageList() {
                 <img src={Wagon} alt="Wagon" style={{ maxWidth: '200px', width: '100%' }} />
                 <img src={Chalk} alt="Chalk" style={{ maxWidth: '200px', width: '100%' }} />
                 <img src={Bike} alt="Bike" style={{ maxWidth: '200px', width: '100%' }} />
-
+                </Box>
         </Container>
     );
 }
