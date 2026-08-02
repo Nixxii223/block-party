@@ -5,19 +5,19 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import { Box, Button } from '@mui/material';
 import './styles.css';
 import { Container } from '@mui/material';
-import Bike from '../Bike.jpeg';
-import CanJam from '../CanJam.JPEG';
-import Canopy from '../Canopy.JPEG';
-import Chalk from '../Chalk.JPEG';
-import Chat from '../Chat.JPEG';
-import Cooper from '../Canopy.jpeg';
-import Food from '../Food.JPEG';
-import Friends from '../Friends.JPEG';
-import Frisbee from '../Frisbee.JPEG';
-import Girls from '../Girls.JPEG';
-import Party from '../Group.JPEG';
-import JumpRope from '../JumpRope.JPEG';
-import Wagon from '../Wagon.jpeg';
+import Bike from '../images/Bike.jpeg';
+import CanJam from '../images/CanJam.JPEG';
+import Canopy from '../images/Canopy.JPEG';
+import Chalk from '../images/Chalk.JPEG';
+import Chat from '../images/Chat.JPEG';
+import Cooper from '../images/Canopy.jpeg';
+import Food from '../images/Food.JPEG';
+import Friends from '../images/Friends.JPEG';
+import Frisbee from '../images/Frisbee.JPEG';
+import Girls from '../images/Girls.JPEG';
+import Party from '../images/Party.JPEG';
+import JumpRope from '../images/JumpRope.JPEG';
+import Wagon from '../images/Wagon.jpeg';
 
 
 export default function TitlebarImageList() {
@@ -30,22 +30,22 @@ export default function TitlebarImageList() {
                 <img src={Party} alt="Party" style={{ maxWidth: '200px', width: '100%' }} />
                 
                 <p className="poppins-regular">Food!.</p>
-                <img master={Canopy} alt="Canopy" style={{ maxWidth: '200px', width: '100%' }} />
-                <img master={Food} alt="Food" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={Canopy} alt="Canopy" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={Food} alt="Food" style={{ maxWidth: '200px', width: '100%' }} />
                 
                 <p className="poppins-regular">Adult Fun!.</p>
-                <img master={Chat} alt="Chat" style={{ maxWidth: '200px', width: '100%' }} />
-                <img master={Girls} alt="Girls" style={{ maxWidth: '200px', width: '100%' }} />
-                <img master={Friends} alt="Friends" style={{ maxWidth: '200px', width: '100%' }} />
-                <img master={CanJam} alt="CanJam" style={{ maxWidth: '200px', width: '100%' }} />
-                <img master={Frisbee} alt="Frisbee" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={Chat} alt="Chat" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={Girls} alt="Girls" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={Friends} alt="Friends" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={CanJam} alt="CanJam" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={Frisbee} alt="Frisbee" style={{ maxWidth: '200px', width: '100%' }} />
 
                 <p className="poppins-regular">Kid Fun!.</p>
-                <img master={Cooper} alt="Cooper" style={{ maxWidth: '200px', width: '100%' }} />
-                <img master={JumpRope} alt="JumpRope" style={{ maxWidth: '200px', width: '100%' }} />
-                <img master={Wagon} alt="Wagon" style={{ maxWidth: '200px', width: '100%' }} />
-                <img master={Chalk} alt="Chalk" style={{ maxWidth: '200px', width: '100%' }} />
-                <img master={Bike} alt="Bike" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={Cooper} alt="Cooper" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={JumpRope} alt="JumpRope" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={Wagon} alt="Wagon" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={Chalk} alt="Chalk" style={{ maxWidth: '200px', width: '100%' }} />
+                <img src={Bike} alt="Bike" style={{ maxWidth: '200px', width: '100%' }} />
                 </Box>
         </Container>
     );
