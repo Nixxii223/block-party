@@ -5,15 +5,15 @@ import { Box, Container } from '@mui/material';
 import './styles.css';
 
 // 1. IMPORT ALL IMAGES
-import CanJam from '../images/CanJam.jpeg';
-import Canopy from '../images/Canopy.jpeg';
+import CanJam from '../images/CanJam.JPEG';
+import Canopy from '../images/Canopy.JPEG';
 import Cooper from '../images/Cooper.jpeg'; 
-import Food from '../images/Food.jpeg';
-import Friends from '../images/Friends.jpeg';
-import Frisbee from '../images/Frisbee.jpeg';
-import Girls from '../images/Girls.jpeg';
-import Party from '../images/Party.jpeg';
-import JumpRope from '../images/JumpRope.jpeg';
+import Food from '../images/Food.JPEG';
+import Friends from '../images/Friends.JPEG';
+import Frisbee from '../images/Frisbee.JPEG';
+import Girls from '../images/Girls.JPEG';
+import Party from '../images/Party.JPEG';
+import JumpRope from '../images/JumpRope.JPEG';
 
 // 2. CREATE AN ARRAY TO LOOP THROUGH
 const itemData = [
