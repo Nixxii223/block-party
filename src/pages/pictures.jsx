@@ -1,32 +1,53 @@
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import { Box, Button } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import './styles.css';
-import { Container } from '@mui/material';
-import Bike from '../src/images/Bikepng.png';
-import CanJam from '../src/images/CanJampng.png';
-import Canopy from '../src/images/Canopypng.png';
-import Chalk from '../src/images/Chalkpng.png';
-import Chat from '../src/images/Chatpng.png';
-import Cooper from '../src/images/Canopypng.png';
-import Food from '../src/images/Foodpng.png';
-import Friends from '../src/images/Friendspng.png';
-import Frisbee from '../src/images/Frisbeepng.png';
-import Girls from '../src/images/Girlspng.png';
-import Party from '../src/images/Partypng.png';
-import JumpRope from '../src/images/JumpRopepng.png';
-import Wagon from '../src/images/Wagonpng.png';
+
+// 1. IMPORT ALL IMAGES
+import CanJam from '../images/CanJam.jpeg';
+import Canopy from '../images/Canopy.jpeg';
+import Cooper from '../images/Cooper.jpeg'; 
+import Food from '../images/Food.jpeg';
+import Friends from '../images/Friends.jpeg';
+import Frisbee from '../images/Frisbee.jpeg';
+import Girls from '../images/Girls.jpeg';
+import Party from '../images/Party.jpeg';
+import JumpRope from '../images/JumpRope.jpeg';
+
+// 2. CREATE AN ARRAY TO LOOP THROUGH
+const itemData = [
+    { img: CanJam, title: 'CanJam' },
+    { img: Canopy, title: 'Canopy' },
+    { img: Cooper, title: 'Cooper' },
+    { img: Food, title: 'Food' },
+    { img: Friends, title: 'Friends' },
+    { img: Frisbee, title: 'Frisbee' },
+    { img: Girls, title: 'Girls' },
+    { img: Party, title: 'Party' },
+    { img: JumpRope, title: 'JumpRope' },
+];
 
 export default function TitlebarImageList() {
     return (
         <Container className="portfolio-container">
-                <h2 className="life-savers-regular">Pictures</h2>
-                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 2 }}>
-           
-                <h2 className="life-savers-regular">Coming Soon!</h2>
-                </Box>
+            <h2 className="life-savers-regular">Pictures</h2>
+            
+            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2, mb: 5 }}>
+                {/* 3. DISPLAY THE IMAGE GALLERY (No Labels) */}
+                <ImageList sx={{ width: '100%', maxWidth: 900, height: 'auto' }} cols={3} gap={12}>
+                    {itemData.map((item) => (
+                        <ImageListItem key={item.title} sx={{ borderRadius: 2, overflow: 'hidden', boxShadow: 3 }}>
+                            <img
+                                src={item.img}
+                                alt={item.title}
+                                loading="lazy"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                            />
+                        </ImageListItem>
+                    ))}
+                </ImageList>
+            </Box>
         </Container>
     );
 }
