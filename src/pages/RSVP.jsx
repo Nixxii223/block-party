@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, TextField, Stack, Button, FormControlLabel, Checkbox, FormControl, Alert, FormLabel, FormGroup } from '@mui/material';
+import { Box, TextField, Stack, Button, FormControlLabel, Checkbox, FormControl, Alert, FormLabel } from '@mui/material';
 import emailjs from 'emailjs-com';
 
 const RSVPForm = () => {
@@ -10,27 +10,14 @@ const RSVPForm = () => {
   const [street, setStreet] = useState('');
   const [allergies, setAllergies] = useState(false);
   const [allergyDetails, setAllergyDetails] = useState('');
-  const [contributions, setContributions] = useState({
-    donateMoney: false,
-    bringFood: false,
-    bringItems: false,
-    contributeActivities: false
-  });
   const [alertMessage, setAlertMessage] = useState('');
   const [alertSeverity, setAlertSeverity] = useState('success');
-
-  const handleCheckboxChange = (event) => {
-    setContributions({
-      ...contributions,
-      [event.target.name]: event.target.checked
-    });
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { donateMoney, bringFood, bringItems, contributeActivities } = contributions;
-    if (!name || !email || !street || (coming && !numberOfPeople) || (allergies && !allergyDetails) || (!donateMoney && !bringFood && !bringItems && !contributeActivities)) {
+    // Removed the contributions check from validation
+    if (!name || !email || !street || (coming && !numberOfPeople) || (allergies && !allergyDetails)) {
       setAlertMessage('Please fill in all required fields.');
       setAlertSeverity('error');
       return;
@@ -43,13 +30,6 @@ const RSVPForm = () => {
       return;
     }
 
-    const contributionList = [
-      donateMoney ? 'Donate money ($5 per person)' : '',
-      bringFood ? 'Bring food' : '',
-      bringItems ? 'Bring items needed for the party' : '',
-      contributeActivities ? 'Contribute to activities' : ''
-    ].filter(Boolean).join(', ');
-
     emailjs.send('service_e549eua', 'template_wywzmue', {
       from_name: name,
       reply_to: email,
@@ -58,12 +38,14 @@ const RSVPForm = () => {
       street: street,
       allergies: allergies ? 'Yes' : 'No',
       allergy_details: allergyDetails,
-      contribution: contributionList,
+      contribution: 'See SignUpGenius', // Static string so your email template doesn't break
     }, 'U2cyjMYTvV_mi5gJv')
     .then((response) => {
        console.log('SUCCESS!', response.status, response.text);
        setAlertMessage('RSVP sent successfully!');
        setAlertSeverity('success');
+       
+       // Reset form
        setName('');
        setEmail('');
        setComing(false);
@@ -71,12 +53,6 @@ const RSVPForm = () => {
        setStreet('');
        setAllergies(false);
        setAllergyDetails('');
-       setContributions({
-         donateMoney: false,
-         bringFood: false,
-         bringItems: false,
-         contributeActivities: false
-       });
     }, (err) => {
        console.log('FAILED...', err);
        setAlertMessage('Failed to send RSVP. Please try again later.');
@@ -96,11 +72,13 @@ const RSVPForm = () => {
       autoComplete="off"
     >
       <h2 className="life-savers-regular">Block Party RSVP</h2>
+      
       {alertMessage && (
         <Alert severity={alertSeverity} sx={{ mb: 2 }}>
           {alertMessage}
         </Alert>
       )}
+      
       <Stack spacing={2}>
         <TextField
           required
@@ -125,6 +103,7 @@ const RSVPForm = () => {
           }
           label="Will you be attending?"
         />
+        
         {coming && (
           <TextField
             required
@@ -135,6 +114,7 @@ const RSVPForm = () => {
             type="number"
           />
         )}
+        
         <TextField
           required
           id="outlined-street"
@@ -142,6 +122,7 @@ const RSVPForm = () => {
           value={street}
           onChange={e => setStreet(e.target.value)}
         />
+        
         <FormControlLabel
           control={
             <Checkbox
@@ -151,6 +132,7 @@ const RSVPForm = () => {
           }
           label="Does anyone have allergies?"
         />
+        
         {allergies && (
           <TextField
             required
@@ -162,33 +144,35 @@ const RSVPForm = () => {
             rows={4}
           />
         )}
+        
         <FormControl required component="fieldset" sx={{ m: 1.5 }}>
           <FormLabel component="legend">
-            We kindly ask that every family contribute in some way if they plan to attend. How would you like to contribute?  Please click on the signup link below on what you are able to helpout with.
+            We kindly ask that every family contribute in some way if they plan to attend. How would you like to contribute?  Please click on the signup link below on what you are able to help out with.
           </FormLabel>
         </FormControl>
         
-                <Button
-                    href="https://www.signupgenius.com/go/10C054CAEA62AA6FBC61-64900667-chester#/"
-                    target="_blank"
-                    variant="contained"
-                    size="large"
-                    sx={{
-                        backgroundColor: '#3d95ce',
-                        color: '#fff',
-                        '&:hover': {
-                            backgroundColor: '#357ebd',
-                        },
-                        mt: 2,
-                    }}
-                    className="poppins-regular"
-                >
-                    SignUp for what you can bring Here!
-                </Button>
+        <Button
+          href="https://www.signupgenius.com/go/10C054CAEA62AA6FBC61-64900667-chester#/"
+          target="_blank"
+          variant="contained"
+          size="large"
+          sx={{
+            backgroundColor: '#3d95ce',
+            color: '#fff',
+            '&:hover': {
+              backgroundColor: '#357ebd',
+            },
+            mt: 2,
+          }}
+          className="poppins-regular"
+        >
+          SignUp for what you can bring Here!
+        </Button>
 
         <Button type="submit" variant="contained" sx={{ mt: 2, mb: 4 }}>
           Submit RSVP
         </Button>
+        
         <h3 className="poppins-regular">
           Thanks again!  Looking forward to seeing everyone!
         </h3>
